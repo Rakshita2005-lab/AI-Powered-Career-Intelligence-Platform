@@ -115,32 +115,6 @@ AI-Career-Intelligence-Platform/
 └── README.md
 ```
 
-## ▶️ Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone <repository-url>
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run Flask Backend:
-
-```bash
-python app.py
-```
-
-Run Streamlit Frontend:
-
-```bash
-streamlit run frontend.py
-```
-
 ## 🎯 Applications
 
 - Career guidance for students
