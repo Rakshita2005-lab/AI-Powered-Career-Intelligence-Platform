@@ -13,7 +13,27 @@ The AI-Powered Career Intelligence Platform helps students, fresh graduates, and
 - 🤖 AI-based career role prediction
 - 📊 Confidence score generation
 - 🎯 Personalized career recommendations
+  
+ ---
+ 
+# 🧠 Machine Learning Performance
 
+The career recommendation model was trained using a large-scale resume dataset and evaluated using classification metrics.
+
+### 🚀 Logistic Regression Model Accuracy
+
+## ⭐ Achieved Accuracy: **95.51%**
+
+The Logistic Regression classifier demonstrated strong performance in predicting suitable career categories from resume features.
+
+The model uses:
+
+- TF-IDF feature extraction
+- Resume text classification
+- Supervised learning approach
+- Probability-based prediction
+
+---
 ## ⚙️ Working Process
 
 1. User uploads a resume in PDF format.
