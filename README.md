@@ -1,98 +1,146 @@
 # 🚀 AI-Powered Career Intelligence Platform
 
-An intelligent AI-based resume analysis and career recommendation system that analyzes candidate resumes, extracts technical skills, and predicts suitable career roles using Machine Learning and Natural Language Processing.
+An AI-based resume analysis and career recommendation system that uses **Machine Learning and Natural Language Processing** to analyze resumes, extract skills, and recommend suitable career roles.
 
-The platform helps students, fresh graduates, and job seekers discover suitable career opportunities by understanding their skills, education, and experience from their resumes.
+## 📌 Overview
 
----
+The AI-Powered Career Intelligence Platform helps students, fresh graduates, and job seekers identify suitable career opportunities by analyzing their resumes. The system extracts technical skills, education details, and experience from resumes and predicts relevant job roles using a trained Machine Learning model.
 
-# 📌 Overview
+## ✨ Features
 
-Choosing the right career path is challenging for many students and job seekers due to the increasing number of job roles and rapidly changing technology requirements.
+- 📄 Resume upload and automatic PDF text extraction
+- 🔍 Skill and keyword extraction using NLP
+- 🤖 AI-based career role prediction
+- 📊 Confidence score generation
+- 🎯 Personalized career recommendations
 
-Traditional job searching platforms mainly rely on keyword matching and do not deeply understand candidate skills, projects, and technical expertise.
+## ⚙️ Working Process
 
-The **AI-Powered Career Intelligence Platform** solves this problem by using Artificial Intelligence techniques to analyze resumes and provide personalized career recommendations.
+1. User uploads a resume in PDF format.
+2. Resume content is extracted using PyMuPDF.
+3. NLP techniques are applied for text preprocessing and skill extraction.
+4. TF-IDF converts resume text into numerical features.
+5. Logistic Regression model predicts suitable career roles.
+6. Recommended roles and confidence scores are displayed.
 
-The system automatically:
+## 📂 Dataset
 
-- Extracts information from resumes.
-- Identifies technical skills.
-- Processes resume content using NLP.
-- Predicts suitable job roles.
-- Provides confidence-based recommendations.
+The Machine Learning model is trained using a dataset containing **54,000+ resumes** collected from different professional domains.
 
----
+The dataset includes resumes from:
 
-# 🎯 Problem Statement
+- Software Development
+- Data Science
+- Artificial Intelligence
+- Web Development
+- Database Administration
+- Testing
+- Networking
+- Engineering
 
-Many students and job seekers struggle to identify career opportunities that match their skills and experience.
+The dataset helps the model learn the relationship between candidate skills and suitable career categories.
 
-Existing solutions have limitations:
+## 🧠 Machine Learning Pipeline
 
-- Manual resume analysis requires significant effort.
-- Keyword-based job searching ignores contextual understanding.
-- Candidates lack personalized career guidance.
-- Skill gaps are difficult to identify.
+```
+Resume Dataset
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+TF-IDF Feature Extraction
+        ↓
+Logistic Regression Model
+        ↓
+Career Role Prediction
+        ↓
+Recommendation Output
+```
 
-This project provides an AI-driven solution that understands resume content and recommends suitable career paths automatically.
+## 🛠️ Tech Stack
 
----
+### Frontend
+- HTML,CSS,Javascript
 
-# 💡 Solution
 
-The platform uses Machine Learning and Natural Language Processing to analyze resumes and map candidate profiles with suitable career roles.
-
-The workflow includes:
-
-1. Resume upload by the user.
-2. PDF text extraction.
-3. Resume preprocessing.
-4. Skill extraction.
-5. Feature transformation using TF-IDF.
-6. Career prediction using Machine Learning.
-7. Displaying recommended roles with confidence scores.
-
----
-
-# ✨ Features
-
-## 📄 Resume Analysis
-
-- Upload resume in PDF format.
-- Extract resume content automatically.
-- Analyze candidate information.
-
-## 🧠 AI-Based Career Prediction
-
-- Predict suitable job roles using Machine Learning.
-- Provide confidence percentage.
-- Generate personalized recommendations.
-
-## 🔍 Skill Extraction
-
-Automatically identifies skills such as:
-
-- Python
-- Java
-- SQL
-- Machine Learning
-- Deep Learning
-- React
+### Backend
 - Flask
-- Spring Boot
-- Cloud Technologies
+- REST API
 
-## 📊 Intelligent Recommendations
+### Machine Learning
+- Python
+- Scikit-learn
+- Logistic Regression
+- TF-IDF Vectorization
 
-Provides career suggestions based on:
+### NLP & Processing
+- Scipy
+- Text preprocessing techniques
 
-- Technical skills
-- Projects
-- Education
-- Experience
+## 📁 Project Structure
 
----
+```
+AI-Career-Intelligence-Platform/
 
-# 🏗️ System Architecture
+│
+├── app.py                 # Flask backend
+├── frontend.py            # frontend
+│
+├── models/
+│   ├── career_model.pkl
+│   ├── tfidf_vectorizer.pkl
+│   ├── label_encoder.pkl
+│   └── feature_selector.pkl
+│
+├── requirements.txt
+└── README.md
+```
+
+## ▶️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Flask Backend:
+
+```bash
+python app.py
+```
+
+Run Streamlit Frontend:
+
+```bash
+streamlit run frontend.py
+```
+
+## 🎯 Applications
+
+- Career guidance for students
+- Resume analysis for fresh graduates
+- Skill-based job recommendations
+- Placement assistance
+- Candidate profile analysis
+
+## 🔮 Future Enhancements
+
+- Integration with job portals
+- Generative AI career assistant
+- Skill gap analysis
+- Personalized learning roadmap
+- Resume improvement suggestions
+- Cloud deployment
+
+## 👩‍💻 Author
+
+**Rakshita Handage**
+
+Computer Science Engineering Student
 
