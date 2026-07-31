@@ -1,0 +1,13 @@
+Flask==3.1.2
+Flask-Cors==6.0.1
+joblib==1.5.1
+numpy==2.3.2
+pandas==2.3.2
+scikit-learn==1.7.1
+scipy==1.16.1
+pdfplumber==0.11.7
+pdfminer.six==20250506
+pillow==11.3.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+threadpoolctl==3.6.0
